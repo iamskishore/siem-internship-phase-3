@@ -42,3 +42,6 @@ host.os.name: "Windows" and event.type: "change" and registry.data.strings: * an
 2025-06-04T06:15:23.123Z,WIN-EXAMPLE,13,Registry value set,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,revershell,"powershell.exe -ExecutionPolicy Bypass -File C:\payload.ps1",reg.exe,C:\Windows\System32\reg.exe,NT AUTHORITY\SYSTEM
 ```
 ## Detection Status
+
+  - [ ] Detection Tested 
+  - [ ]  Alert Triggered 

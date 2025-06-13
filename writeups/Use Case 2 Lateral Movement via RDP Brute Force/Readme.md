@@ -19,10 +19,21 @@
 ## Detection Logic / Query
 
 ```sql
-event.code: "4624" and winlog.event_data.LogonType: "10" 
+event.code: "4625" and event.action: "logon-failed"
 ```
+
+![Rdp Burte](../../screenshots/rule-rdp.png)
 ## Sample Alert Screenshot
+
+![](../../screenshots/rep-burte.png)
 
 ## Logs or Sample Event
 
+```json
+"@timestamp","event.action","process.command_line","event.code","destination.port","source.port","network.transport"
+"Jun 13, 2025 @ 13:21:59.711","logon-failed","-",4625,"-",0,"-"
+```
 ## Detection Status
+
+  - [ ] Detection Tested 
+  - [ ]  Alert Triggered 
